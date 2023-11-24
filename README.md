@@ -1,1 +1,1 @@
-# test-rabbitmq
+# poc-rabbitmq
