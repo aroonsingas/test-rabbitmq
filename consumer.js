@@ -15,7 +15,7 @@ const sleep = (milliseconds) => {
 };
 
 async function receiveOrders() {
-  const conn = await amqp.connect("amqp://nick:password@localhost:5672");
+  const conn = await amqp.connect("amqp://test:password@localhost:5672");
   const channel = await conn.createChannel();
 
   const queue = "orders-new";

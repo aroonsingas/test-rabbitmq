@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require("uuid");
 const { faker } = require('@faker-js/faker');
 
 async function sendOrder(order) {
-  const connection = await amqp.connect("amqp://nick:password@localhost:5672");
+  const connection = await amqp.connect("amqp://test:password@localhost:5672");
   const channel = await connection.createChannel();
   const queue = "orders-new";
 
